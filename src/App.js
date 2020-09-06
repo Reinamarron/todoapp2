@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          ToDo2
+          Edit Goals
         </p>
         <a
           className="App-link"
@@ -16,13 +16,12 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Plan.Create.Do.
         </a>
-        <h5>All you have ToDo2 is for you</h5>
+        <h5>Get set, get done</h5>
         <ul>
-          <li><input type="checkbox"/>ToDo2 item #1</li>
-          <li><input type="checkbox"/>ToDo2 item #2</li>
-          <li><input type="checkbox"/>ToDo2 item #3</li>
+          <li><input type="checkbox"/>item 1</li>
+          <li><input type="checkbox"/>item 2</li>
+          <li><input type="checkbox"/>item 3</li>
         </ul>
       </header>
     </div>
