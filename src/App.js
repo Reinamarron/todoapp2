@@ -11,32 +11,27 @@ const profile = {
 const todoList = [{
   id: 1,
   title: "Buy groceries",
-  description: "your description",
+  description: "party trays",
   completed: false
 },
 {
   id: 2,
   title: "Buy flowers",
-  description: "your description",
+  description: "red tulips",
   completed: true
 },
 {
   id: 3,
   title: "Pick up drycleaning",
-  description: "your description",
+  description: "dresses",
   completed: false
 }];
 function App() {
-  return (
-  
-
-   
+  return (   
       <div> 
     <nav>
       <img alt="avatar" src={profile.avatar}/>
     <h1>{profile.userName}</h1>
-
-      
     </nav>
         <h5>Get set, get done</h5>
         <ul>
@@ -51,6 +46,16 @@ function App() {
     </div>
   );
 }
+
+const listItemStyles = {
+  title:"Buy Groceries", 
+  description:"party trays",
+  
+}
+
+
+
+
 
 export default App;
 
