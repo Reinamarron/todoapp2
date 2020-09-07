@@ -1,31 +1,57 @@
 import React from 'react';
-import logo from './images/logo.svg';
-import './App.css';
 
+import './App.css';
+import avatar from './X462YQ4HIJEGHHX2I3LXRV4G7A.jpg';
+
+const profile = { 
+  userName: "Reina",
+  avatar: avatar,
+};
+
+const todoList = [{
+  id: 1,
+  title: "Buy groceries",
+  description: "your description",
+  completed: false
+},
+{
+  id: 2,
+  title: "Buy flowers",
+  description: "your description",
+  completed: true
+},
+{
+  id: 3,
+  title: "Pick up drycleaning",
+  description: "your description",
+  completed: false
+}];
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit Goals
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>
+  
+
+   
+      <div> 
+    <nav>
+      <img alt="avatar" src={profile.avatar}/>
+    <h1>{profile.userName}</h1>
+
+      
+    </nav>
         <h5>Get set, get done</h5>
         <ul>
-          <li><input type="checkbox"/>item 1</li>
-          <li><input type="checkbox"/>item 2</li>
-          <li><input type="checkbox"/>item 3</li>
+          {todoList.map((todoItem)=>{
+            return (
+              <li key={todoItem.id}><input checked={todoItem.completed} type="checkbox"/>{todoItem.title}</li>
+            )
+          })}
+         
         </ul>
-      </header>
+      
     </div>
   );
 }
 
 export default App;
+
+
