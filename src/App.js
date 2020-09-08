@@ -37,7 +37,7 @@ function App() {
         <ul>
           {todoList.map((todoItem)=>{
             return (
-              <li key={todoItem.id}><input checked={todoItem.completed} type="checkbox"/>{todoItem.title}</li>
+              <li key={todoItem.id}><input defaultChecked={todoItem.completed} type="checkbox"/>{todoItem.title}</li>
             )
           })}
          
