@@ -3,20 +3,6 @@ import React from 'react';
 import './App.css';
 import avatar from './X462YQ4HIJEGHHX2I3LXRV4G7A.jpg';
 
-    class App extends React.Component {
-      render(){
-        const profileStyle ={
-          backgroundColor: 'blue',
-          color:'yellow',
-          padding: '10px 25px'
-          textAlign: 'center',
-          textDecoration: none,
-          display: inlineBlock;
-        }
-        )
-      }
-    
-
 const profile = { 
   userName: "Reina",
   avatar: avatar,
@@ -60,14 +46,13 @@ function App() {
     </div>
   );
 }
-    
+
 const listItemStyles = {
   title:"Buy Groceries", 
   description:"party trays",
   
 }
 
-    }
 
 
 

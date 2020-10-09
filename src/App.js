@@ -27,17 +27,39 @@ const todoList = [{
   completed: false
 }];
 function App() {
+  const cssStyling = {
+    backgroundColor: 'green',
+    color:'white',
+    padding: '10px 25px',
+    textAlign: 'center',
+    textDecoration: 'none',
+    display: 'inlineBlock',
+    
+  }
+  const ulStyling = {
+    listStyle: "none",
+    verticalAlign: "middle",
+    position: 'relative',
+    display:'inline-block',
+  }
+
+  // const listItem = {
+  //   verticalAlign: "middle",
+  //   position: 'relative',
+  //   display:'inline-block',
+  // }
   return (   
-      <div> 
+      <div style= {cssStyling}> 
     <nav>
-      <img alt="avatar" src={profile.avatar}/>
+      <img alt="avatar" width={200} src={profile.avatar}/>
     <h1>{profile.userName}</h1>
     </nav>
         <h5>Get set, get done</h5>
-        <ul>
+        <ul style={ulStyling}>
           {todoList.map((todoItem)=>{
             return (
-              <li key={todoItem.id}><input defaultChecked={todoItem.completed} type="checkbox"/>{todoItem.title}</li>
+              <li  key={todoItem.id}><input defaultChecked={todoItem.completed} type="checkbox"/>{todoItem.title}</li>
+      
             )
           })}
          
